@@ -1,0 +1,194 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Assistant','Lato', 'Mulish','Noto Sans', sans-serif;
+}
+
+body{
+    background-color:rgba(21, 21, 175, 0.611);
+}
+
+/* ================container================= */
+.container {
+    width: 50%;
+    margin: 50px auto;
+    text-align: center;
+
+}
+
+h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* ================form ================= */
+
+form {
+    background-color: rgb(84, 26, 231);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: left;
+
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* ================label ================= */
+
+label {
+    font-weight: bold;
+    color: whitesmoke;
+    width: 160px;
+    font-size: 1.2rem;
+}
+
+
+/* ================input ================= */
+
+form input {
+    width: 90%;
+    margin: 15px 0;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+form select {
+    outline: none;
+    border: none;
+    padding: 10px;
+    width: 90%;
+    border-radius: 5px;
+}
+
+.radio {
+    display: flex;
+    color:yellow;
+    align-items: center;
+}
+
+.radio input {
+    margin: 10px;
+}
+
+/* ================textarea ================= */
+
+textarea {
+    outline: none;
+    border: none;
+    resize: none;
+    margin-top: 10px;
+    width: 90%;
+    height: 100px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.btn {
+    width: 20%;
+    color: white;
+    background-color: blue;
+    transition: 0.5s;
+    margin: 20px;
+}
+
+.btn:last-child{
+    margin: 0;
+}
+.btn:hover{
+    background-color: rgb(254, 187, 163);
+    color:blue
+}
+
+.btn1 {
+    justify-content: flex-end;
+}
+
+
+/* ================tablet view================= */
+
+
+@media (min-width:701px) and  (max-width:1000px){
+    .container {
+        width: 70%;
+        
+    
+    }
+    .form{
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 20px 0;
+
+    }    
+
+    form input, form textarea, form select {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    .btn{
+        width: 50%;
+        margin: 10px 
+    }
+
+    .btn1{
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+    .rad{
+        flex-direction: row;
+    }
+}
+
+
+
+
+/* ================Mobile view================= */
+
+@media (max-width:700px){
+    .container {
+        width: 90%;
+        
+    
+    }
+    .form{
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 20px 0;
+
+    }    
+
+    form input, form textarea, form select {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    .btn{
+        width: 100%;
+        margin: 10px 0;
+    }
+
+
+    .rad{
+        flex-direction: row;
+    }
+}
